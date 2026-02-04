@@ -50,7 +50,7 @@
 
 /* white color */
 .text-white{
-    color: #FFFFFF;
+    color: #fffffffb;
 }
 /* green color */
 .text-green{
@@ -154,6 +154,129 @@
     gap: 30px;
     justify-content: center;
 }
+.podcast-section{
+    width: 100%;
+    height: 646px;
+    border: 1px solid #1A0B2E;
+    background-color: #1A0B2E;
+}
+.podcast-contain{
+    text-align: center;
+    /* border: 1px solid cyan; */
+    margin: 50px 200px auto 200px;
+    margin-bottom: 80px;
+}
+.podcast-contain h2{
+    font-size: 48px;
+    font-weight: 700;
+    padding-bottom: 16px;
+}
+.podcast-contain p{
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.podcast-contain .podcast-p{
+    font-size: 16px;
+    padding-top: 40px;
+}
+.underline{
+    color:#ffffffa4;
+    height: 0.1px;
+    margin-left: 140px;
+    margin-right: 140px;
+}
+.podcast-card{
+    /* border: 1px solid maroon; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 80px auto 120px auto;
+    gap: 80px;
+
+}
+.card{
+    /* border: 1px solid salmon; */
+    width: 240px;
+    align-content: center;
+}
+.card img{
+    display: block;
+    margin: 0 auto;
+}
+.card p{
+    padding-top: 16px;
+    text-align: center;
+}
+/* why choose  */
+.choose{
+    background-color: #230E3D;
+}
+.choose h2{
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 120px;
+    padding-bottom: 40px;
+}
+.box-container{
+    width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 120px;
+    /* border: 1px solid tomato; */
+}
+.box-container img{
+    width: 42px;
+    height: 45px;
+}
+.box-container .box-1{
+    padding: 108px 40px;
+}
+.box-container h3{
+    font-size: 24px;
+    font-weight: 700;
+    padding-top: 16px;
+}
+.box-container p{
+    padding-top: 16px;
+}
+
+.box-container>*{
+    /* border: 1px solid white; */
+    background-color: rgba(53, 17, 101, 0.4);
+    padding: 40px;
+    border-radius: 40px;
+    box-shadow: 2px 5px 10px #402567d8;
+    
+
+}
+.box-1{
+    grid-area: box-1;
+}
+.box-2{
+    grid-area: box-2;
+}
+.box-3{
+    grid-area: box-3;
+}
+.box-4{
+    grid-area: box-4;
+}
+.box-5{
+    grid-area: box-5;
+}
+.box-container{
+    display: grid;
+    gap: 30px;
+    grid-template-areas: 
+    
+    "box-1 box-2 box-2"
+    "box-1 box-3 box-3"
+    "box-4 box-4 box-5"
+}
+
+
+
 
 
 
@@ -174,6 +297,7 @@
 }
 
 @media screen and (max-width: 576px) {
+    /* navigation */
     .nav-links{
         display: none;
     }
@@ -193,8 +317,28 @@
     .hero-container{
         width: 100%;
     }
-    
+    /* podcast  */
+
+    .podcast-contain{
+    text-align: center;
+    /* border: 1px solid cyan; */
+    margin: 0 auto;
+    margin-bottom: 30px;
+       
+    }
+    .podcast-card{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    }
+
+
+
+
+
+
 }
+
 
 
 
