@@ -24,12 +24,27 @@
     font-weight: 600;
     padding: 12px 16px;
     border-radius: 10000px;
+    cursor: pointer;
     background: linear-gradient(45deg,  #F7E93F, #FB09B4, #9100F8);
-    transition: transform 0.1s ease-in, box-shadow 0.1s ease-out;
+    transition: transform 0.2s ease-in, box-shadow 0.1s ease-out;
+}
+.secondary-btn{
+    color:#00FF88;
+    border-color: #00FF88;
+    font-size: 16px;
+    font-weight:500;
+    padding: 12px 30px;
+    border-radius: 10000px;
+    cursor: pointer;
+    background-color:transparent;
+}
+.secondary-btn:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 5px 25px rgba(0, 128, 0, 0.568);
 }
 .primary-btn:hover{
     transform: translateY(-2px);
-  box-shadow: 0 5px 25px rgba(128, 128, 128, 0.445);
+  box-shadow: 0 5px 25px rgba(128, 128, 128, 0.5);
 }
 
 
@@ -77,4 +92,86 @@
     padding-top: 25px;
     padding-bottom: 25px;
 }
+.banner{
+    background-image: url(../assets/hero-bg.png);
+    height: 760px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.hero-container{
+    /* border: 1px solid cyan; */
+    padding-top: 101px;
+    margin: 0 auto;
+    width: 550px;
+    /* height: 558px; */
+}
+.hero-img{
+    background-image: url(../assets/hero-circle.png);
+    width: 350px;
+    height: 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    padding-top: 69px;
+}
+.hero-img img{
+    width: 117px;
+    height: 175px;
+    display: block;
+    margin:0 auto;
+    animation: pulse 4s ease-in-out infinite;
+
+}
+.hero-img .frame-icon{
+    width: 90px;
+    height: 55px;
+    position: relative;
+    bottom: 230px;
+    left: 123px;
+    filter: drop-shadow(0px 15px 40px rgba(0, 128, 0, 0.801));
+}
+.hero-contain{
+    text-align: center;
+    padding-top: 40px;
+}
+.hero-contain h1{
+    font-size: 60px;
+    font-weight: 700;
+    padding-bottom: 8px;
+}
+.hero-contain p{
+    font-size: 16px;
+    font-weight: 400;
+    padding-bottom: 24px;
+}
+.hero-button{
+    gap: 30px;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+@keyframes pulse {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+    
+}
+
+
+
 
