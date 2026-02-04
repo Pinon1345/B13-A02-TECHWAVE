@@ -82,6 +82,11 @@
     font-size: 15px;
     font-weight: 500;
 }
+.humburger{
+    display: none;
+    width: 30px;
+    cursor: pointer;
+}
 
 .wave {
   background: linear-gradient(90deg, #F7E93F, #FB09B4, #9100F8);
@@ -155,10 +160,6 @@
 
 
 
-
-
-
-
 @keyframes pulse {
     0%{
         transform: scale(1);
@@ -171,6 +172,31 @@
     }
     
 }
+
+@media screen and (max-width: 576px) {
+    .nav-links{
+        display: none;
+    }
+    .nav-btn{
+        display: none;
+    }
+
+    .humburger{
+        display: block;
+    }
+    .navbar{
+        justify-content: space-between;
+    }
+    .brand-name{
+        padding-left: 10px;
+    }
+    .hero-container{
+        width: 100%;
+    }
+    
+}
+
+
 
 
 
